@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danu Enterprises - Technology & Safety Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to ensure Inter font is applied and provide a smooth scroll */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Style for smooth background image transitions on hover if needed for product cards */
+        .product-card img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm p-4 sticky top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center px-4 md:px-0">
+            <!-- Company Logo/Name -->
+            <a href="#" class="text-2xl font-bold text-blue-700 rounded-lg p-2 hover:bg-blue-50 transition-colors">Danu Enterprises</a>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-blue-700 font-medium px-3 py-2 rounded-md transition-colors hover:bg-blue-50">Home</a>
+                <a href="#products" class="text-gray-600 hover:text-blue-700 font-medium px-3 py-2 rounded-md transition-colors hover:bg-blue-50">Products</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-700 font-medium px-3 py-2 rounded-md transition-colors hover:bg-blue-50">About Us</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-700 font-medium px-3 py-2 rounded-md transition-colors hover:bg-blue-50">Contact</a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden mt-2 px-2 pb-3 space-y-1 sm:px-3">
+            <a href="#home" class="block text-gray-600 hover:text-blue-700 font-medium px-3 py-2 rounded-md transition-colors hover:bg-blue-50">Home</a>
+            <a href="#products" class="block text-gray-600 hover:text-blue-700 font-medium px-3 py-2 rounded-md transition-colors hover:bg-blue-50">Products</a>
+            <a href="#about" class="block text-gray-600 hover:text-blue-700 font-medium px-3 py-2 rounded-md transition-colors hover:bg-blue-50">About Us</a>
+            <a href="#contact" class="block text-gray-600 hover:text-blue-700 font-medium px-3 py-2 rounded-md transition-colors hover:bg-blue-50">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-r from-blue-700 to-blue-500 text-white py-20 md:py-32 overflow-hidden rounded-b-xl shadow-lg">
+        <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://placehold.co/1920x1080/0A1B2C/FFFFFF/png?text=Technology+Background'); background-size: cover; background-position: center;"></div>
+        <div class="container mx-auto text-center relative z-10 px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">
+                Your Trusted Partner for Technology and Safety Solutions
+            </h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in-up delay-200">
+                Providing quality Computer & IT products, Electronics, Security, UAVs, and Fire Safety devices.
+            </p>
+            <a href="#products" class="bg-white text-blue-700 hover:bg-blue-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 animate-fade-in-up delay-400">
+                Explore Our Products
+            </a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-gray-50 px-4 md:px-0">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Why Choose Danu Enterprises?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Quality Products -->
+                <div class="bg-white p-8 rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300 border border-gray-100">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Quality Products</h3>
+                    <p class="text-gray-600">Sourced from reputable manufacturers, ensuring reliability and performance for all your needs.</p>
+                </div>
+
+                <!-- Card 2: Comprehensive Range -->
+                <div class="bg-white p-8 rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300 border border-gray-100">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Comprehensive Range</h3>
+                    <p class="text-gray-600">A wide selection of products across IT, Electronics, Security, UAVs, and Fire Safety to meet diverse needs.</p>
+                </div>
+
+                <!-- Card 3: Expert Support -->
+                <div class="bg-white p-8 rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300 border border-gray-100">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 0A9 9 0 0110.607 4H5m4.393 9.393A9 9 0 0019 10.607V19m-4.636-4.636l3.536 3.536m0 0L14 14m0 0l-3.536 3.536m7.072-7.072l3.536-3.536"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Expert Support</h3>
+                    <p class="text-gray-600">Our knowledgeable team provides expert guidance and reliable after-sales support for complete peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Showcase -->
+    <section id="products" class="py-16 bg-blue-50 px-4 md:px-0">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Our Key Offerings</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+                <!-- Product Category Card 1: Computer and IT Products -->
+                <div class="bg-white rounded-xl shadow-md p-6 product-card transform hover:scale-105 transition-transform duration-300 cursor-pointer border border-gray-100">
+                    <img src="https://placehold.co/300x200/B3E0FF/0A1B2C?text=IT+Products" alt="Computer and IT Products" class="w-full h-40 object-cover rounded-md mb-4 shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Computer & IT Products</h3>
+                    <p class="text-gray-600 text-sm">Laptops, Desktops, Peripherals, Networking Gear, Software Solutions.</p>
+                </div>
+
+                <!-- Product Category Card 2: Electronic Items -->
+                <div class="bg-white rounded-xl shadow-md p-6 product-card transform hover:scale-105 transition-transform duration-300 cursor-pointer border border-gray-100">
+                    <img src="https://placehold.co/300x200/FFD9B3/0A1B2C?text=Electronics" alt="Electronic Items" class="w-full h-40 object-cover rounded-md mb-4 shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Electronic Items</h3>
+                    <p class="text-gray-600 text-sm">Home Appliances, Audio-Visual Equipment, Electronic Components.</p>
+                </div>
+
+                <!-- Product Category Card 3: Security and Surveillance -->
+                <div class="bg-white rounded-xl shadow-md p-6 product-card transform hover:scale-105 transition-transform duration-300 cursor-pointer border border-gray-100">
+                    <img src="https://placehold.co/300x200/C2E0B3/0A1B2C?text=Security" alt="Security and Surveillance Products" class="w-full h-40 object-cover rounded-md mb-4 shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Security & Surveillance</h3>
+                    <p class="text-gray-600 text-sm">CCTV Cameras, Access Control Systems, Alarm Systems, Biometrics.</p>
+                </div>
+
+                <!-- Product Category Card 4: Unmanned Aerial Vehicles -->
+                <div class="bg-white rounded-xl shadow-md p-6 product-card transform hover:scale-105 transition-transform duration-300 cursor-pointer border border-gray-100">
+                    <img src="https://placehold.co/300x200/B3B3FF/0A1B2C?text=UAVs" alt="Unmanned Aerial Vehicles" class="w-full h-40 object-cover rounded-md mb-4 shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Unmanned Aerial Vehicles</h3>
+                    <p class="text-gray-600 text-sm">Drones for Surveying, Photography, Delivery, and Industrial Use.</p>
+                </div>
+
+                <!-- Product Category Card 5: Fire Safety Devices -->
+                <div class="bg-white rounded-xl shadow-md p-6 product-card transform hover:scale-105 transition-transform duration-300 cursor-pointer border border-gray-100">
+                    <img src="https://placehold.co/300x200/FFB3B3/0A1B2C?text=Fire+Safety" alt="Fire Safety Devices" class="w-full h-40 object-cover rounded-md mb-4 shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Fire Safety Devices</h3>
+                    <p class="text-gray-600 text-sm">Fire Extinguishers, Smoke Detectors, Fire Alarm Systems, Safety Gear.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us (Brief) Section -->
+    <section id="about" class="py-16 bg-gray-50 px-4 md:px-0">
+        <div class="container mx-auto text-center md:flex md:items-center md:space-x-12">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <img src="https://placehold.co/600x400/D0E0F0/0A1B2C?text=About+Us" alt="About Danu Enterprises" class="rounded-xl shadow-lg mx-auto w-full max-w-sm md:max-w-full">
+            </div>
+            <div class="md:w-1/2 text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About Danu Enterprises</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Based in Kapurthala, Punjab, Danu Enterprises is dedicated to providing high-quality solutions across various technological and safety domains. We pride ourselves on offering a diverse range of products, from cutting-edge IT equipment and essential electronic items to advanced security systems, versatile unmanned aerial vehicles, and critical fire safety devices.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Our mission is to empower individuals and businesses with reliable products and exceptional service, ensuring safety, efficiency, and technological advancement for our community.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact" class="py-16 bg-blue-700 text-white px-4 md:px-0 rounded-t-xl shadow-lg">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <!-- Address Card -->
+                <div class="bg-blue-600 p-6 rounded-xl shadow-md border border-blue-500">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243m0 0A7.989 7.989 0 012 10c0-4.418 3.582-8 8-8s8 3.582 8 8a7.989 7.989 0 01-2.343 5.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        Our Location
+                    </h3>
+                    <p>Danu Enterprises</p>
+                    <p>27, Saffron Residency</p>
+                    <p>Backside Ramada Hotel</p>
+                    <p>Wadala Kalan, Kapurthala</p>
+                    <p>India - 144601</p>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="bg-blue-600 p-6 rounded-xl shadow-md border border-blue-500">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684L10.5 9.87a1 1 0 00.54 1.06l7.766 4.316a1 1 0 001.06.54l1.206-.402a1 1 0 00.684-.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        Call Us
+                    </h3>
+                    <p><a href="tel:+911234567890" class="hover:underline">+91 9478 500 230</a></p>
+                    <p><a href="tel:+919876543210" class="hover:underline">+91 8968 523 363</a></p>
+                </div>
+
+                <!-- Email Card -->
+                <div class="bg-blue-600 p-6 rounded-xl shadow-md border border-blue-500">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-4 9H7a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2z"></path></svg>
+                        Email Us
+                    </h3>
+                    <p><a href="mailto:info@danuenterprises.com" class="hover:underline">info@danuenterprises.com</a></p>
+                    <p><a href="mailto:support@danuenterprises.com" class="hover:underline">support@danuenterprises.com</a></p>
+                </div>
+            </div>
+            <!-- Simple Map Placeholder (replace with actual Google Maps embed if needed) -->
+            <div class="mt-12 w-full">
+                <h3 class="text-2xl font-bold mb-4">Find Us on the Map</h3>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d851.6913528124395!2d75.43127426951627!3d31.365452143515316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDIxJzU1LjYiTiA3NcKwMjUnNTQuOSJF!5e0!3m2!1sen!2sin!4v1749823834431!5m2!1sen!2sin" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-xl shadow-lg border border-blue-500" ></iframe> -->
+                <!-- <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d851.6913528124395!2d75.43127426951627!3d31.365452143515316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDIxJzU1LjYiTiA3NcKwMjUnNTQuOSJF!5e0!3m2!1sen!2sin!4v1749823834431!5m2!1sen!2sin" 
+                    width="600" 
+                    height="450"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"                    
+                    class="rounded-xl shadow-lg border border-blue-500"
+                ></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d406.3811176701354!2d75.4305136311636!3d31.36529809910554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1749824517562!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-xl shadow-lg border border-blue-500"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 rounded-t-lg">
+        <div class="container mx-auto text-center px-4">
+            <p class="mb-4">&copy; <span id="current-year"></span> Danu Enterprises. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+            </div>
+            <!-- Social Media Icons (replace # with actual links) -->
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6" aria-hidden="true">
+                        <path d="M12.488 2.007a.75.75 0 00-.976 0L8.068 5.67A.75.75 0 008 6.136V7.61c-2.33 1.094-3.69 3.393-3.69 5.926 0 4.254 3.446 7.7 7.7 7.7s7.7-3.446 7.7-7.7c0-2.533-1.36-4.832-3.69-5.926V6.136a.75.75 0 00-.068-.466l-3.444-3.663zM12 21.25a8.75 8.75 0 110-17.5 8.75 8.75 0 010 17.5zM12 8a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V8.75A.75.75 0 0112 8zm-2.25 4.5a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5H9.75z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Current Year -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('#mobile-menu a, .md\\:flex a');
+
+            // Toggle mobile menu visibility
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Close mobile menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Update current year in footer
+            const currentYearSpan = document.getElementById('current-year');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>
